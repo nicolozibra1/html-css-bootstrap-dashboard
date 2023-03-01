@@ -45,7 +45,7 @@
     <div class="wrapper d-flex">
 
         <!-- SIDEBAR -->
-        <nav id="sidebar" class="small-sidebar text-white debug">
+        <nav id="sidebar" class="small-sidebar text-white">
             
             <div class="h-100 container-fluid d-flex flex-column align-items-center justify-content-between">
                 <!-- TOP-SIDEBAR -->
@@ -66,7 +66,43 @@
             <!-- ASIDE -->
             <div class="aside bg-primary text-white">
                 <div class="container-fluid">
-                    aside
+                    <div class="row d-flex flex-row debug">
+
+                        <!-- NEW STUDENT -->
+                        <div class="zz-col col-12 col-md-4 d-flex align-items-center py-4 debug">
+                            <span class="pe-4 fw-semibold">Nuovo Studente</span>
+                            <a class="zz-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></a>
+                            <!-- CANVAS -->
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                ...
+                              </div>
+                            </div>
+                        </div>
+
+                        <!-- BOOL BREADCRUMB -->
+                        <div class="col-12 col-md-4 d-flex flex-column  justify-content-center py-4 debug">
+                            <h3 class="m-0">Boolean</h3>
+                            <ol class="breadcrumb m-0"  style="--bs-breadcrumb-divider: '';">
+                                <li class="breadcrumb-item" aria-current="page"><span class="badge bg-dark bg-opacity-50">3 app</span></li>
+                                <li><i class="fa-solid fa-angles-right px-1"></i></li>
+                                <li class="breadcrumb-item d-lg-none" aria-current="page"><span class="badge rounded-circle bg-dark bg-opacity-50">+</span></li>
+                                <li class="breadcrumb-item d-none d-lg-block px-1" aria-current="page"><span class="badge bg-dark bg-opacity-50">Boolean mobile app</span></li>
+                                <li class="breadcrumb-item d-none d-lg-block" aria-current="page"><span class="badge bg-dark bg-opacity-50">Boolean web app</span></li>
+                                <li class="breadcrumb-item d-none d-lg-block" aria-current="page"><span class="badge bg-dark bg-opacity-50">Boolean blog app</span></li>
+                            </ol>
+                        </div>
+
+                        <!-- LAST30M ONLINE STUDENT -->
+                        <div class="col-12 col-md-4 d-flex flex-column align-content-center pt-4 debug">
+                            <span class="pb-2">Studenti online negli ultimi 30 minuti</span>
+                            <h4>125</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
 

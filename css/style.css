@@ -1,6 +1,8 @@
 .debug{
     border: 1px solid red;
 }
+
+/* HEADER */
 header{
     height: 70px;
 }
@@ -12,12 +14,14 @@ header{
     background-color: #e5e5e5;
 }
 
+/* WRAPPER */
 .wrapper{
     margin-top: 70px;
     height: calc(100vh - 70px);
     overflow: hidden;
 }
 
+/* SIDEBAR */
 #sidebar{
     height: 100%;
     width: 150px;
@@ -26,14 +30,33 @@ header{
     background-image: url("../img/sidebar-bg.png");
 }
 
+/* MAIN */
 main{
     height: 100%;
     flex-grow: 1;
     overflow-y: auto;
 }
 
-@media screen and (max-width: 768px){
+/* ASIDE */
+.zz-btn{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+@media screen and (max-width: 992px){
     #sidebar{
         width: 75px;
+    }
+    .aside .row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .zz-col{
+        order: 2;
     }
 }
