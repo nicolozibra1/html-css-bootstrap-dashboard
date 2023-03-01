@@ -1,0 +1,26 @@
+.debug{
+    border: 1px solid red;
+}
+header{
+    height: 70px;
+}
+
+.wrapper{
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+}
+
+#sidebar{
+    height: 100%;
+    width: 180px;
+    flex-shrink: 0;
+    background-color: #051e34;
+    background-image: url("../img/sidebar-bg.png");
+}
+
+main{
+    height: 100%;
+    flex-grow: 1;
+    overflow-y: auto;
+}
