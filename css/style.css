@@ -5,8 +5,8 @@ header{
     height: 70px;
 }
 .box-logo{
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
 }
 .zz-search, .zz-search-icon{
     background-color: #e5e5e5;
@@ -20,7 +20,7 @@ header{
 
 #sidebar{
     height: 100%;
-    width: 180px;
+    width: 150px;
     flex-shrink: 0;
     background-color: #051e34;
     background-image: url("../img/sidebar-bg.png");
@@ -30,4 +30,10 @@ main{
     height: 100%;
     flex-grow: 1;
     overflow-y: auto;
+}
+
+@media screen and (max-width: 768px){
+    #sidebar{
+        width: 75px;
+    }
 }
