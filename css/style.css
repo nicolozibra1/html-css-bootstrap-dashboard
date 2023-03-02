@@ -64,6 +64,10 @@ main{
 .zz-vis{
     visibility: hidden;
 }
+.card-body ul{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
 
 @media screen and (max-width: 992px){
     #sidebar{
