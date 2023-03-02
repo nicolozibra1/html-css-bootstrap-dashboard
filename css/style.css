@@ -45,6 +45,25 @@ main{
     border-radius: 5px;
     padding: 10px 15px;
 }
+.action-btn{
+    text-decoration: none;
+    color: white;
+    background-color: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+/* M-CONTENT */
+.class-circle{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f26551;
+}
+.zz-vis{
+    visibility: hidden;
+}
 
 @media screen and (max-width: 992px){
     #sidebar{
@@ -59,5 +78,8 @@ main{
     .zz-col{
         order: 2;
         justify-content: center;
+    }
+    .zz-vis{
+        visibility: visible;
     }
 }
