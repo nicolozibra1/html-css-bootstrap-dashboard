@@ -72,13 +72,13 @@
         <main>
 
             <!-- ASIDE -->
-            <div class="aside container-aside text-white">
+            <div class="aside container-aside text-white pt-3">
                 <div class="container-fluid">
-                    <div class="row d-flex flex-row">
+                    <div class="row d-flex flex-row justify-content-around">
 
                         <!-- NEW STUDENT -->
-                        <div class="zz-col col-12 col-md-4 d-flex align-items-center py-3">
-                            <span class="pe-4 fw-semibold">Nuovo Studente</span>
+                        <div id="deposit" class="zz-col col-12 col-md-4 d-flex align-items-center py-3">
+                            <span class="pe-4 fw-semibold">Deposit with Credit Card</span>
                             <a class="zz-btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></a>
                             <!-- CANVAS -->
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -149,8 +149,8 @@
                         </div>
 
                         <!-- BOOL BREADCRUMB -->
-                        <div class="col-12 col-md-4 d-flex flex-column justify-content-center py-2">
-                            <h3 class="m-0">Your Assets</h3>
+                        <div id="navigation-bread" class="col-12 col-md-4 d-flex flex-column justify-content-center py-2 debug">
+                            <h4>Nicolò Zibra</h4>
                             <ol class="breadcrumb m-0"  style="--bs-breadcrumb-divider: '';">
                                 <li class="breadcrumb-item" aria-current="page"><span class="badge bg-warning text-black">profile</span></li>
                                 <li><i class="fa-solid fa-angles-right px-1"></i></li>
@@ -162,9 +162,11 @@
                         </div>
 
                         <!-- LAST30M ONLINE STUDENT -->
-                        <div class="col-12 col-md-4 d-flex flex-column align-content-center pt-3">
-                            <span class="pb-2">Studenti online negli ultimi 30 minuti</span>
-                            <h4>125</h4>
+                        <div id="balance" class="col-12 col-md-4 d-flex flex-column align-content-center pt-3">
+                            <h4>Your Balance</h4>
+                            <span class="pb-2 fw-semibold">20,000 $ <span class="text-bg-success rounded-1 text-black">+4,71%</span></span>
+                            
+                            
                         </div>
                     </div>
                 </div>
