@@ -101,10 +101,10 @@ main{
 }
 
 /* M-CONTENT */
-#popular-coin{
+#popular-coin, #faq{
     background-color: black;
 }
-#popular-coin .card-header{
+#popular-coin .card-header, #faq .card-header{
     background-color: #2b2b2b;
     color: var(--bs-warning);
 }
@@ -134,6 +134,10 @@ tbody tr:hover{
 }
 td .action-btn:hover{
     box-shadow: rgba(194, 194, 216, 0.336) 0px 30px 60px -12px inset, rgba(175, 174, 174, 0.3) 0px 18px 36px -18px inset;
+}
+.accordion-body{
+    color: var(--bs-warning);
+    font-style: italic;
 }
 .accordion-button{
     transition: 0.1s;
