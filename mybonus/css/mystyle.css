@@ -102,6 +102,11 @@ main{
     border-radius: 5px;
 }
 
+/* CANVAS */
+.icon-container{
+    width: 50px;
+    height: 75px;
+}
 /* M-CONTENT */
 #popular-coin, #faq, #todo, #chart{
     background-color: black;
