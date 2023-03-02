@@ -81,6 +81,9 @@ main{
     .aside .row{
         flex-direction: column;
     }
+    #offcanvasRight{
+        min-width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -92,3 +95,10 @@ main{
         visibility: visible;
     }
 }
+
+@media screen and (min-width: 992px){
+    #offcanvasRight{
+        min-width: 50%;
+    }
+}
+
