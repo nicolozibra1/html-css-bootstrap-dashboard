@@ -5,6 +5,7 @@
 /* HEADER */
 header{
     height: 70px;
+    width: 100vw;
 }
 .box-logo-big{
     max-height: 50px;
@@ -19,6 +20,7 @@ header{
     max-width: 50px;
     max-height: 50px;
 }
+
 .zz-search, .zz-search-icon{
     background-color: #2b2b2b;
     color: white;
@@ -42,7 +44,7 @@ header{
 /* SIDEBAR */
 #sidebar{
     height: 100%;
-    width: 150px;
+    width: 200px;
     flex-shrink: 0;
     background-color: black;
     background-image: url("../img/sidebar-bg.png");
@@ -101,10 +103,10 @@ main{
 }
 
 /* M-CONTENT */
-#popular-coin, #faq{
+#popular-coin, #faq, #todo, #chart{
     background-color: black;
 }
-#popular-coin .card-header, #faq .card-header{
+#popular-coin .card-header, #faq .card-header, #todo .card-header, #chart .card-header{
     background-color: #2b2b2b;
     color: var(--bs-warning);
 }
