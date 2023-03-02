@@ -85,8 +85,8 @@ main{
     cursor: pointer;
 }
 #deposit, #balance, #navigation-bread{
-    border: 1px solid var(--bs-warning);
-    border-radius: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
     width: 20%;
 }
 .fa-plus{
@@ -101,6 +101,23 @@ main{
 }
 
 /* M-CONTENT */
+#popular-coin{
+    background-color: black;
+}
+#popular-coin .card-header{
+    background-color: #2b2b2b;
+    color: var(--bs-warning);
+}
+.card-header img{
+    width: 30px;
+}
+.coin-name{
+    font-size: 0.9rem;
+    padding-left:3px;
+}
+tbody td, th{
+    border:none;
+}
 tbody tr{
     transition: 0.1s;
 }
@@ -113,6 +130,7 @@ tbody tr:hover{
     height: 25px;
     border-radius: 50%;
     background-color: #f26551;
+    margin-right: 5px;
 }
 td .action-btn:hover{
     box-shadow: rgba(194, 194, 216, 0.336) 0px 30px 60px -12px inset, rgba(175, 174, 174, 0.3) 0px 18px 36px -18px inset;
