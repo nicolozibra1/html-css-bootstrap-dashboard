@@ -51,10 +51,11 @@ header{
 }
 #sidebar ul li{
     transition: 0.3s;
+    cursor: pointer;
 }
-#sidebar ul li:hover{
+#sidebar ul li:hover span{
     cursor:pointer;
-    background-color: rgba(212, 212, 212, 0.479);
+    color: var(--bs-warning);
 }
 
 /* MAIN */
@@ -81,15 +82,21 @@ main{
 }
 .btn-custom:hover{
     border-radius: 50%;
+    border-color: var(--bs-warning);
 }
 .btn-custom:hover .fa-plus{
     scale:1.4;
     cursor: pointer;
+    color: var(--bs-warning);
 }
 #deposit, #balance, #navigation-bread{
     border: 1px solid white;
     border-radius: 5px;
     width: 20%;
+}
+#deposit:hover, #balance:hover, #navigation-bread:hover{
+    border-color: var(--bs-warning);
+    cursor: pointer;
 }
 .fa-plus{
     transition: 1s;
@@ -129,7 +136,11 @@ tbody tr{
     transition: 0.1s;
 }
 tbody tr:hover{
-    background-color: var(--bs-secondary-bg);
+    background-color: rgba(255, 255, 255, 0.219);
+    cursor: pointer;
+}
+tbody tr:hover .action-btn i{
+    color: var(--bs-warning);
 }
 .class-circle{
     display: inline-block;
@@ -139,18 +150,22 @@ tbody tr:hover{
     background-color: #f26551;
     margin-right: 5px;
 }
+td .action-btn i{
+    color: grey;
+}
 td .action-btn:hover{
-    box-shadow: rgba(194, 194, 216, 0.336) 0px 30px 60px -12px inset, rgba(175, 174, 174, 0.3) 0px 18px 36px -18px inset;
+    
+    border-color: var(--bs-warning);
 }
 .accordion-body{
-    color: var(--bs-warning);
     font-style: italic;
+    color: var(--bs-warning);
+    font-size: small;
 }
 .accordion-button{
     transition: 0.1s;
-}
-.accordion-button:hover{
-    background-color: var(--bs-secondary-bg);
+    color: white;
+    background-color: black;
 }
 .zz-body{
     border: 1px solid lightgray;
@@ -163,9 +178,10 @@ td .action-btn:hover{
 }
 .todo-list ul li{
     transition: 0.1s;
+    color: white;
 }
 .todo-list ul li:hover{
-    background-color: var(--bs-secondary-bg);
+    color: var(--bs-warning);
     cursor: pointer;
 }
 
